@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 1. TUTAJ DEFINIUJEMY ZMIENNE MOTYWU */
 @theme {
   /* Domyślne zmienne Next.js (warto zostawić) */
@@ -36,9 +40,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* ZMIANA: Używamy zmiennej z fontem, który obsługuje cienkie wagi */
+  font-family: var(--font-masyw), sans-serif;
 }
-
 /* 3. TWOJE WŁASNE KLASY */
 @layer components {
   .link-masyw-mobile {
@@ -53,6 +57,12 @@ body {
   .sliding-text-desktop {
     @apply text-white text-7xl tracking-tighter;
   }
+  .product-masyw {
+    @apply text-gray-500 hover:text-gray-800;
+  }
+  /* .border-test {
+    @apply border-2 border-red-300;
+  } */
 }
 
 @keyframes scrolling-text {

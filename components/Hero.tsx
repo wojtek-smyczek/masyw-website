@@ -5,7 +5,7 @@ export default function Hero() {
     "MASYW — Solid. Heavy. Timeless. — We create monolithic forms that ground space. — The monumental weight of nature. — ";
 
   return (
-    <section className="flex justify-center h-screen w-full relative">
+    <section className="flex justify-center h-screen w-full relative overflow-hidden">
       {/* ZDJECIE TLA */}
       <Image src="/hero1.jpg" alt="" fill className="object-cover" priority />
 

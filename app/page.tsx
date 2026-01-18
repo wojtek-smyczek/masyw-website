@@ -1,13 +1,11 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Products from "@/components/Products";
+import ProductList from "@/components/ProductList";
 
 export default function Home() {
   return (
-    <main className="left-10 min-h-screen bg-masyw-dark text-white">
-      <Navbar />
+    <main className="left-10 min-h-screen text-white flex flex-col">
       <Hero />
-      <Products />
+      <ProductList />
     </main>
   );
 }
