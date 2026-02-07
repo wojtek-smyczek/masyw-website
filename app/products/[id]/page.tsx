@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { products } from "@/data/products";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -20,9 +21,20 @@ export default async function ProductElements({ params }: ProductPageProps) {
     return notFound();
   }
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-black text-white">
-      <div className="flex flex-col gap-1">
-        {/* LEWA KOLUMN */}
+    <section
+      className={clsx(
+        "pt-10",
+        "md:pt-0",
+        "flex",
+        "flex-col",
+        "md:flex-row",
+        "min-h-screen",
+        "bg-black",
+        "text-white",
+      )}
+    >
+      {/* LEWA KOLUMN */}
+      <div className="order-2 md:order-1 md:flex-1 flex flex-col gap-1">
         {product.image.map((imgSrc, index) => (
           <div key={index} className="relative w-full h-screen">
             <Image
@@ -37,12 +49,12 @@ export default async function ProductElements({ params }: ProductPageProps) {
       </div>
 
       {/* PRAWA KOLUMNA */}
-      <div className="relative pl-3 ">
-        <div className="sticky top-0 h-screen flex flex-col justify-center">
+      <div className=" order-1 md:order-2 md:flex-1 md:sticky md:h-screen md:top-0 flex flex-col relative pl-3 w-full">
+        <div className="relative md:top-0 md:h-screen flex flex-col justify-center">
           {/* NAWIGACJA */}
-          <div className="sticky top-3  flex flex-row gap-10 justify-self-end-safe">
+          <div className=" top-3  flex flex-row gap-10 justify-self-end-safe">
             <span>MASYW / COLLECTION 01</span>
-            <Link href="/products" className="">
+            <Link href="/#products" className="z-50 cursor-pointer">
               [X]
             </Link>
           </div>
