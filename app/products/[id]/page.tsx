@@ -23,7 +23,7 @@ export default async function ProductElements({ params }: ProductPageProps) {
   return (
     <section
       className={clsx(
-        "pt-10",
+        "pt-20",
         "md:pt-0",
         "flex",
         "flex-col",
@@ -34,9 +34,12 @@ export default async function ProductElements({ params }: ProductPageProps) {
       )}
     >
       {/* LEWA KOLUMN */}
-      <div className="order-2 md:order-1 md:flex-1 flex flex-col gap-1">
+      <div className="order-2 flex flex-col gap-1 md:order-1 md:flex-1">
         {product.image.map((imgSrc, index) => (
-          <div key={index} className="relative w-full h-screen">
+          <div
+            key={index}
+            className="relative h-screen w-full"
+          >
             <Image
               src={imgSrc}
               alt={product.title}
@@ -49,20 +52,23 @@ export default async function ProductElements({ params }: ProductPageProps) {
       </div>
 
       {/* PRAWA KOLUMNA */}
-      <div className=" order-1 md:order-2 md:flex-1 md:sticky md:h-screen md:top-0 flex flex-col relative pl-3 w-full">
-        <div className="relative md:top-0 md:h-screen flex flex-col justify-center">
+      <div className="relative order-1 flex w-full flex-col pb-10 pl-3 md:sticky md:top-0 md:order-2 md:h-screen md:flex-1">
+        <div className="relative flex flex-col justify-center md:top-0 md:h-screen">
           {/* NAWIGACJA */}
-          <div className=" top-3  flex flex-row gap-10 justify-self-end-safe">
+          <div className="top-3 flex flex-row gap-10 justify-self-end-safe">
             <span>MASYW / COLLECTION 01</span>
-            <Link href="/#products" className="z-50 cursor-pointer">
+            <Link
+              href="/#products"
+              className="z-50 cursor-pointer"
+            >
               [X]
             </Link>
           </div>
           {/* OPIS i TYTUL */}
-          <div className="">
-            <h2 className="text-7xl">{product.title}</h2>
-            <p className="font-light uppercase pb-5 ">{product.description}</p>
-          </div>
+
+          <h2 className="text-7xl">{product.title}</h2>
+          <p className="pb-5 font-light uppercase">{product.description}</p>
+
           {/* SPECYFIKACJA */}
           <div>
             {/* TABELA */}

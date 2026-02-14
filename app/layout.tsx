@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* 3. ZMIANA: Wstrzykujemy zmienną inter.variable do body */}
-      <body className={`${inter.variable} antialiased`}>
+      <body
+        className={`${inter.variable} flex min-h-screen flex-col antialiased`}
+      >
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="w-full grow">{children}</main>
         <Footer />
       </body>
     </html>

@@ -5,9 +5,15 @@ export default function Hero() {
     "MASYW — Solid. Heavy. Timeless. — We create monolithic forms that ground space. — The monumental weight of nature. — ";
 
   return (
-    <section className="flex justify-center h-screen w-full relative overflow-hidden">
+    <section className="relative flex h-screen w-full justify-center overflow-hidden">
       {/* ZDJECIE TLA */}
-      <Image src="/hero1.jpg" alt="" fill className="object-cover" priority />
+      <Image
+        src="/hero1.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        priority
+      />
 
       {/* BLOK TEKSTU */}
       <div className="absolute top-20 w-full">
