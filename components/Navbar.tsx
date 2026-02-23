@@ -26,7 +26,7 @@ export default function Navbar() {
         className="relative z-50 cursor-pointer text-2xl tracking-tight transition-all duration-200 hover:scale-105 md:text-2xl"
         href="/"
       >
-        masyw
+        bare* | big fluffy thing
       </Link>
 
       {/* LINKI */}

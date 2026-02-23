@@ -4,9 +4,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export default function ProductList() {
-  const textOnTop =
-    "MASYW  create monolithic forms that do not merely occupy space they ground it. Solid. Heavy. Timeless. MASYW brings the monumental weight of nature into your interior, offering an immovable foundation in a world of constant flux. ";
-
   return (
     <section
       id="products"
