@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import ContactForm from "./contactForm";
-import { Product } from "@/types/product";
+import { Product } from "@/data/products";
 
 export default function ProductDetails({ product }: { product: Product }) {
   const [showForm, setShowForm] = useState(false);

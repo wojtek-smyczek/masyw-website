@@ -26,7 +26,7 @@ export default function Navbar() {
         className="relative z-50 cursor-pointer text-2xl tracking-tight transition-all duration-200 hover:scale-105 md:text-2xl"
         href="/"
       >
-        bare* | big fluffy thing
+        smyczek & szopa
       </Link>
 
       {/* LINKI */}
@@ -76,11 +76,11 @@ export default function Navbar() {
             Contact
           </Link>
           <Link
-            href="/info"
+            href="/about"
             className="link-masyw"
             onClick={() => setIsOpen(false)}
           >
-            Info
+            About
           </Link>
         </div>
       )}

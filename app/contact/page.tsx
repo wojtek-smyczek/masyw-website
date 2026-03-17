@@ -1,5 +1,6 @@
 import { contact } from "@/data/contact";
 import Image from "next/image";
+import ContactForm from "@/components/contactForm";
 
 export default function ContactPage() {
   return (
@@ -22,7 +23,7 @@ export default function ContactPage() {
       </div>
       {/* PRAWA */}
       <div className="relative order-1 flex w-full flex-col pb-10 pl-3 md:sticky md:top-0 md:order-2 md:h-screen md:flex-1">
-        <div className="top-3 flex flex-col justify-center md:h-screen">
+        <div className="top-3 flex flex-col justify-center gap-3 md:h-screen">
           {/* TYTUL */}
           <h2 className="text-7xl">CONTACT</h2>
 
@@ -36,6 +37,11 @@ export default function ContactPage() {
 
             <span className="text-gray-500">IG</span>
             <span className="">{contact.instagram}</span>
+          </div>
+          {/* CONTACT FORM */}
+          <div className="">
+            <h2>CONTACT FORM</h2>
+            <ContactForm />
           </div>
         </div>
       </div>

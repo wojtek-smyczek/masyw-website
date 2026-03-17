@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { products } from "@/data/products";
-import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export default function ProductList() {
   return (
     <section
       id="products"
-      className="border-test min-h-screen w-full bg-white"
+      className="min-h-screen w-full bg-white"
     >
       {/* PRODUCTS */}
       <div className="grid grid-cols-1 gap-1 bg-white md:grid-cols-3">

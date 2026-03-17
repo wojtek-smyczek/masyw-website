@@ -1,16 +1,25 @@
+import Link from "next/link";
+import { contact } from "@/data/contact";
+
 export default function Footer() {
   const footerSections = [
     {
       title: "CONTACT",
-      links: ["444-444-444", "mail@mail.com"],
+      links: [
+        { label: contact.phone, href: "/contact" },
+        { label: contact.mail, href: "/contact" },
+      ],
     },
     {
       title: "INFO",
-      links: ["LEGAL NOTICE", "TERMS AND NOTICE"],
+      links: [{ label: "ABOUT", href: "/about" }],
     },
     {
       title: "SOCIALS",
-      links: ["INSTAGRAM", "FACEBOOK"],
+      links: [
+        { label: "INSTAGRAM", href: "https://instagram.com" },
+        { label: "FACEBOOK", href: "https://facebook.com" },
+      ],
     },
   ];
 
@@ -27,7 +36,11 @@ export default function Footer() {
             <ul className="flex flex-col ">
               {item.links.map((link, i) => (
                 <li className="product-masyw cursor-pointer" key={i}>
-                  {link}
+                  {link.href ? (
+                    <Link href={link.href}>{link.label}</Link>
+                  ) : (
+                    link.label
+                  )}
                 </li>
               ))}
             </ul>

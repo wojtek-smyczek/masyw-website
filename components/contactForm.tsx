@@ -1,12 +1,13 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
 import { sendMail, formState } from "../app/api/action";
 
 const initialState: formState = {};
 
 function ContactForm() {
-  const [state, formAction] = useFormState(sendMail, initialState);
+  const [state, formAction] = useActionState(sendMail, initialState);
 
   return (
     <form action={formAction}>
