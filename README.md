@@ -2,9 +2,12 @@
 
 A product showcase website for a design studio specializing in monolithic stainless steel furniture and objects. Built as a modern, responsive single-brand e-commerce frontend.
 
+![Product view 1](docs/01.png)
+![Product view 2](docs/02.png)
+
 ## About the project
 
-MASYW is a fictional brand concept — a design studio founded by two friends from southern Poland, crafting heavy, industrial furniture from stainless steel. The website presents their product catalog with detailed specifications, an image gallery, and integrated contact forms.
+MASYW is a brand founded by a friend from southern Poland — a design studio crafting heavy, industrial furniture from stainless steel. I'm helping him build the website, which presents their product catalog with detailed specifications, an image gallery, and integrated contact forms. I also contributed to the overall visual design of the site.
 
 ### Key features
 
@@ -18,13 +21,13 @@ MASYW is a fictional brand concept — a design studio founded by two friends fr
 
 ## Tech stack
 
-| Category | Technology |
-|----------|-----------|
-| Framework | [Next.js 16](https://nextjs.org/) (App Router) |
-| Language | [TypeScript](https://www.typescriptlang.org/) (strict mode) |
-| Styling | [Tailwind CSS 4](https://tailwindcss.com/) |
-| Forms | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) |
-| Linting | ESLint + Prettier (with Tailwind plugin) |
+| Category  | Technology                                                                |
+| --------- | ------------------------------------------------------------------------- |
+| Framework | [Next.js 16](https://nextjs.org/) (App Router)                            |
+| Language  | [TypeScript](https://www.typescriptlang.org/) (strict mode)               |
+| Styling   | [Tailwind CSS 4](https://tailwindcss.com/)                                |
+| Forms     | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) |
+| Linting   | ESLint + Prettier (with Tailwind plugin)                                  |
 
 ## Project structure
 
@@ -63,7 +66,7 @@ masyw/
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/masyw.git
+git clone https://github.com/wojtek-smyczek/masyw.git
 cd masyw
 npm install
 ```
@@ -85,4 +88,4 @@ npm start
 
 ## License
 
-This project is for educational and portfolio purposes.
+© MASYW. All rights reserved.
